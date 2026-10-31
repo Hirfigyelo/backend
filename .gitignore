@@ -1,0 +1,8 @@
+.agents
+.codex
+.env
+.venv
+*.db-journal
+
+__pycache__
+*.pyc

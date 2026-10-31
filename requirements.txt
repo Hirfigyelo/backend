@@ -1,0 +1,14 @@
+# REST API
+slowapi
+fastapi
+python-multipart
+
+# Backend processing
+bs4
+lxml
+pydantic[email]
+cryptography
+
+# Async
+aiosqlite
+aiohttp

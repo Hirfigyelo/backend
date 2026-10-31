@@ -1,0 +1,13 @@
+services:
+  thunderapi:
+    build: .
+    env_file:
+      - .env
+    environment:
+      DEBUG_MODE: "0"
+    user: "${UID:-1000}:${GID:-1001}"
+    volumes:
+      - "./data:/data"
+    ports:
+      - "${HOST}:${PORT}:8000"
+    restart: unless-stopped

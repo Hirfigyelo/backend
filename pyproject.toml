@@ -1,0 +1,35 @@
+[project]
+name="Hirkontextus"
+description="Híraggregáló szolgáltatáshoz REST API"
+version = "1.0.0"
+requires-python = ">= 3.14"
+authors = [
+	{name = "Maho Yoshino", email="mahoyoshino@proton.me"}
+	{name = "Dolbesz"}
+]
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://hirkontextus.hu"
+Repository = "https://github.com/Hirfigyelo/backend.git"
+Issues = "https://github.com/Hirfigyelo/backend/issues"
+
+[dependency-groups]
+dev = [
+	"pytest",
+	"pytest-asyncio",
+	"ruff",
+	"httpx"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+target-version = "py314"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]

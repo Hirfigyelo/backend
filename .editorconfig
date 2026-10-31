@@ -1,0 +1,12 @@
+root = true
+
+[*]
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = tab
+
+[*.md]
+trim_trailing_whitespace = false   # keep the two-space markdown line breaks
+
+[*.yaml]
+indent_style = space
