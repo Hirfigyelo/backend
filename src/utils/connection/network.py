@@ -82,7 +82,7 @@ async def start():
 		if __session is not None and not __session.closed:
 			return
 		__closing = False
-		__session = ClientSession(headers={"User-Agent": "ThunderAPI/1.0"}, cookie_jar=DummyCookieJar())
+		__session = ClientSession(headers={"User-Agent": "Hirkontextus/1.0"}, cookie_jar=DummyCookieJar())
 
 async def close():
 	global __closing, __session
