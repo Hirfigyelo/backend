@@ -4,7 +4,7 @@ description="Híraggregáló szolgáltatáshoz REST API"
 version = "1.0.0"
 requires-python = ">= 3.14"
 authors = [
-	{name = "Maho Yoshino", email="mahoyoshino@proton.me"}
+	{name = "Maho Yoshino", email="mahoyoshino@proton.me"},
 	{name = "Dolbesz"}
 ]
 readme = "README.md"
